@@ -24,8 +24,8 @@ class MapContainer extends Component {
 
     this.state = {
       isLoading: true,
-      lat: 37.506502,
-      lon: 127.053617,
+      lat: nowlat,
+      lon: nowlon,
       menus: [1, 2, 3],
     };
 
@@ -68,7 +68,7 @@ class MapContainer extends Component {
   getMap = () => {
     var weatherData = -1;
     this.getLocation(() => {
-      this.setState({ lat: 37.49743642465314, lon: 127.02712417436199 });
+      this.setState({ lat: nowlat, lon: nowlon });
       let container = document.getElementById("Mymap");
       let options = {
         center: new kakao.maps.LatLng(this.state.lat, this.state.lon),
@@ -160,7 +160,6 @@ class MapContainer extends Component {
                       location: new kakao.maps.LatLng(nowlat, nowlon),
                     });
                   }
-                  console.log("this.state.menus : ",this.state.menus)
                 });
 
               // ps.keywordSearch("피자", this.placesSearchCB, {
