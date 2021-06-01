@@ -1,3 +1,7 @@
+// .env 로딩 위해 
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+//
 const express = require("express");
 const app = express();
 const port = 3001; // react의 기본값은 3000이니까 3000이 아닌 아무 수
@@ -5,9 +9,10 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const route = require("./routes/index");
 const mysql = require("mysql");
-const env = require("dotenv");
+// const env = require("dotenv");
 let moment = require("moment");
-env.config();
+// env.config();
+
 //db연동 위해
 var connection = mysql.createConnection({
   host: "localhost",
@@ -28,6 +33,7 @@ app.get("/", (req, res) => {
 // data가 0. 맑음
 app.post("/database0", (req, res) => {
   console.log("/database0 접속완료");
+  console.log("DBPASS : ", process.env);
   let month = moment().month() + 1;
   console.log("현재 월 : ", month);
   if (3 <= month && month <= 5) {

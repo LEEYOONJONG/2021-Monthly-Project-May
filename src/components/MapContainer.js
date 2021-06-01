@@ -68,7 +68,7 @@ class MapContainer extends Component {
   getMap = () => {
     var weatherData = -1;
     this.getLocation(() => {
-      this.setState({ lat: nowlat, lon: nowlon });
+      this.setState({ lat: 37.49743642465314, lon: 127.02712417436199 });
       let container = document.getElementById("Mymap");
       let options = {
         center: new kakao.maps.LatLng(this.state.lat, this.state.lon),
@@ -160,6 +160,7 @@ class MapContainer extends Component {
                       location: new kakao.maps.LatLng(nowlat, nowlon),
                     });
                   }
+                  console.log("this.state.menus : ",this.state.menus)
                 });
 
               // ps.keywordSearch("피자", this.placesSearchCB, {
