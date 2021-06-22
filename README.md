@@ -42,12 +42,14 @@ momokji는 무엇을 먹을지 고민하는 분들을 위해 개발되었습니�
    ```bash
    git clone http://khuhub.khu.ac.kr/momokji/momokji
    ```
+   
 
 2. Install npm packages.
 
    ```bash
    npm install
    ```
+   
 
 3. Create new file named `.env` and enter API_keys as below.
 
@@ -61,8 +63,11 @@ momokji는 무엇을 먹을지 고민하는 분들을 위해 개발되었습니�
   REACT_APP_KAKAO_INIT = {Kakao REST API Key}
   WEATHER_KEY = {openweathermap API key}
   ```
+  
 
 4. Create new tables using MySQL as below.
+
+   sql 폴더의 rain.sql, seasons.sql 파일을 참조.
 
 - DATABASE(MySQL) 설정 방법
 
@@ -76,6 +81,7 @@ momokji는 무엇을 먹을지 고민하는 분들을 위해 개발되었습니�
   source rain.sql;
   source seasons.sql;
   ```
+  
 
 5. Run the scripts.
 
@@ -83,6 +89,9 @@ momokji는 무엇을 먹을지 고민하는 분들을 위해 개발되었습니�
    node server/server
    npm start
    ```
+   
+## Demo
+https://2017104013.oss2021.tk:3000/
 
 ## Contact
 
