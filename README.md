@@ -16,6 +16,18 @@ momokji는 무엇을 먹을지 고민하는 분들을 위해 개발되었습니�
 - 주변 음식점 추천
 
   메뉴 추천에 그치지 않고, 해당 메뉴들을 판매하는 음식점까지 알려주고, '나에게 카카오톡'으로 음식점 정보를 보낼 수 있어 편리합니다.
+  
+## 스크린샷
+- 메인화면
+<img width="441" alt="스크린샷 2021-06-22 오후 4 31 01" src="https://user-images.githubusercontent.com/29617557/122882861-9045e200-d377-11eb-8f88-7f562f117549.png">
+- 지도
+<img width="527" alt="스크린샷 2021-06-22 오후 4 31 44" src="https://user-images.githubusercontent.com/29617557/122882880-963bc300-d377-11eb-9ccb-ce1a6ec69c39.png">
+- 마커 클릭 시
+<img width="552" alt="스크린샷 2021-06-22 오후 4 32 19" src="https://user-images.githubusercontent.com/29617557/122882899-9b990d80-d377-11eb-97e4-09c8bc6c3d34.png">
+- 카카오톡 전송 기능
+<img width="306" alt="스크린샷 2021-06-22 오후 4 32 55" src="https://user-images.githubusercontent.com/29617557/122882940-a784cf80-d377-11eb-8436-52d838065a5a.png">
+- 네이버 길찾기 링크 제공
+<img width="507" alt="스크린샷 2021-06-22 오후 4 33 10" src="https://user-images.githubusercontent.com/29617557/122883245-f6326980-d377-11eb-8720-707571c3f7f8.png">
 
 ## 사용한 기술 또는 API
 
